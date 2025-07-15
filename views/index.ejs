@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sunscreen Reminder</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌞 UV Index Today</h1>
+    <form action="/get-uv" method="GET">
+      <label for="date">Select a date:</label>
+      <input type="datetime-local" id="date" name="date" required>
+      <button type="submit">Check UV Index</button>
+    </form>
+    <form action="/" method="GET">
+      <button type="submit">Check UV Index for Current Time</button>
+    </form>
+    <p>Current UV Index: <strong><%= uv %></strong></p>
+    <h2><%= message %></h2>
+  </div>
+</body>
+</html>

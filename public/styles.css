@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #87ceeb, #f0f8ff); /* Sky-like gradient */
+  text-align: center;
+  margin-top: 50px;
+  animation: backgroundAnimation 10s infinite alternate; /* Subtle background animation */
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+  }
+  100% {
+    background: linear-gradient(to bottom, #4682b4, #b0e0e6);
+  }
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Styling for input fields */
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Styling for buttons */
+button {
+  background-color: #007BFF; /* Blue color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:active {
+  background-color: #003f7f; /* Even darker blue on click */
+}
+
+button:disabled {
+  background-color: #ccc; /* Gray for disabled state */
+  cursor: not-allowed;
+}
